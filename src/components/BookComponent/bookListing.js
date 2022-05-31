@@ -48,7 +48,7 @@ const columns = [
  
 ];
 const rows = books;
-const serverUrl = 'http://localhost:8000/image/';
+const serverUrl = 'https://backend.hithere.co.nz/image/';
 
 const handleChangePage = (event, newPage) => {
   setPage(newPage);
