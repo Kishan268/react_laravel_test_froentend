@@ -10,9 +10,7 @@ export default function useAuth() {
   const history = useHistory();
     return {
         getUserRegister: async (data) => {
-            // console.log('data',data)
             var responseData = await AuthRepository.UserRegister(data);
-            // console.log(responseData);
             if (responseData.status === 200) {             
 
                 notification.open({
@@ -35,7 +33,6 @@ export default function useAuth() {
 
        getUserLogin: async (data) => {     
         var responseData = await AuthRepository.UserLogin(data);
-        //  console.log(responseData);
         if (responseData.status === 200) {
           notification.open({
             message: "Success",
@@ -62,11 +59,8 @@ export default function useAuth() {
           }
         },
         getBookRegister: async (data) => {
-          // console.log('data',data)
           var responseData = await AuthRepository.BookRegister(data);
-          // console.log(responseData);
           if (responseData.status === 200) {             
-
               notification.open({
                 message: "Register",
                 description: "Book Added SuccessFully...!!",

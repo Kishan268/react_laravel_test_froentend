@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React,{useState,useEffect} from 'react';
 import {
   BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
@@ -12,7 +12,11 @@ import BookListing from './components/BookComponent/bookListing';
 import Login from './components/LoginComponent/login';
 
 function App() {
+  const [check, setCheck] = useState();
   var isLogin = localStorage.getItem('token');
+  useEffect( () => {
+    setCheck()
+  }, []);
   return (
     <>
      <Router>

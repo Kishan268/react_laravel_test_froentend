@@ -10,12 +10,9 @@ import TableRow from '@mui/material/TableRow';
 import axios from 'axios';
 import { Row, Col  } from 'antd';
 export default function index() {
-
-
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
   const [books, setBooks] = useState([]);
-  
   useEffect( () => {
      booksList();
   }, []);

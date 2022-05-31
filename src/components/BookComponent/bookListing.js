@@ -41,8 +41,8 @@ const columns = [
   { id: 'title', label: 'Title', minWidth: 170 },
   { id: 'subtitle', label: 'Subtitle', minWidth: 100 },
   {
-    id: 'Authors',
-    label: 'authors',
+    id: 'authors',
+    label: 'Authors',
     minWidth: 170,
   },
  
