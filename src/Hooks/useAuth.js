@@ -42,7 +42,7 @@ export default function useAuth() {
           cookies.set('token', responseData.data.token)
           localStorage.setItem('token', responseData.data.token)
           localStorage.setItem("userId", responseData.data.user.id);
-          history.push('/book_listing');
+          history.push('/');
           window.location.reload(true);
           return  responseData.data;
 
